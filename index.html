@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Phonetic Translator</title>
+</head>
+<body>
+  <!-- TEAM NAV BAR -->
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">Translator Depot</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="#!">Available Modes</a>
+            <ul class="nav-dropdown">
+              <!-- links loaded in gameScript.js -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!--Generator-->
+  <header>
+    <div class="container">
+      <h1>Phonetic Translator</h1>
+      <p>Insert any word to receive a phonetic translation or toggle to "Developer Mode" to learn the nickname of a special character</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="textInput">Enter Text:</label>
+          <textarea id="textInput" class="form-control" rows="4"></textarea>
+          <button id="clearBtn" class="btn btn-danger mt-3">Clear</button>
+          <!-- Add the select element for the dropdown menu -->
+          <select id="modeDropdown" class="form-select mt-3">
+            <!-- Options will be populated dynamically by JavaScript -->
+          </select>
+        </div>
+        <div class="col">
+          <p>Translation:</p>
+          <ul id="outputList" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <hr>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Quick Links
+            </h6>
+            <p>
+              <a href="https://github.com/pglenn1/juliett-project-alex" target="_blank" class="text-reset">See This Repo</a>
+            </p>
+            <p>
+              <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpglenn1.github.io%2Fjuliett-project-alex%2F" target="_blank" class="text-reset">Check Validity</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Media
+            </h6>
+            <p>
+              <a href="https://www.linkedin.com/in/phillip-glenn-416116290/" target="_blank" class="text-reset">LinkedIn</a>
+            </p>
+            <p>
+              <a href="https://github.com/pglenn1" target="_blank" class="text-reset">GitHub</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact Me</h6>
+            <p>
+              pglenn1@una.edu
+            </p>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright: Alex Glenn
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js'></script>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js'></script>
+  <script  src="scripts/script.js"></script>
+</body>
+</html>
