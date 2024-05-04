@@ -20,7 +20,10 @@
           <li>
             <a href="#!">Available Modes</a>
             <ul class="nav-dropdown">
-              <!-- links loaded in gameScript.js -->
+              <!-- Dropdown menu for available modes -->
+              <li><a href="#" id="civilianMode">Civilian Phonetics</a></li>
+              <li><a href="#" id="natoMode">NATO Phonetics</a></li>
+              <li><a href="#" id="developerMode">Developer Mode</a></li>
             </ul>
           </li>
         </ul>
@@ -43,10 +46,7 @@
           <label for="textInput">Enter Text:</label>
           <textarea id="textInput" class="form-control" rows="4"></textarea>
           <button id="clearBtn" class="btn btn-danger mt-3">Clear</button>
-          <!-- Add the select element for the dropdown menu -->
-          <select id="modeDropdown" class="form-select mt-3">
-            <!-- Options will be populated dynamically by JavaScript -->
-          </select>
+          <button id="toggleBtn" class="btn btn-primary mt-3">Civilian Phonetic Alphabet</button>
         </div>
         <div class="col">
           <p>Translation:</p>
